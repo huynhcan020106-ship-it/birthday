@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#17131d">
+	<title>Một món quà dành cho em gái</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="experience">
+		<div class="grain" aria-hidden="true"></div>
+		<section class="screen intro-screen is-active" id="introScreen" aria-labelledby="introTitle">
+			<div class="eyebrow"><span></span> một điều nhỏ dành riêng cho em gái</div>
+			<p class="date-stamp">15 · 09 · 2026</p>
+			<h1 id="introTitle">Có một món quà<br><em>đang chờ em gái.</em></h1>
+			<p class="intro-copy">Một chút bất ngờ, một chút yêu thương,<br>và thật nhiều điều đáng nhớ.</p>
+			<button class="gift-button" id="giftButton" type="button" aria-label="Mở hộp quà">
+				<span class="gift-glow"></span><span class="gift-box"><span class="gift-lid"><i></i></span><span class="gift-body"><i></i></span><span class="gift-bow bow-left"></span><span class="gift-bow bow-right"></span></span><span class="tap-hint">chạm để mở</span>
+			</button>
+			<p class="tiny-note">Hãy bật âm thanh nếu em muốn nghe món quà này kể chuyện.</p>
+			<div class="share-qr" aria-label="Mã QR để mở trang trên điện thoại">
+				<div id="qrCode"></div>
+				<p>quét mã để mở trên điện thoại</p>
+			</div>
+		</section>
+
+		<section class="screen celebration-screen" id="celebrationScreen" aria-labelledby="celebrationTitle" aria-hidden="true">
+			<div class="confetti" id="confetti" aria-hidden="true"></div>
+			<div class="celebration-topline"><span>cho một người thật đặc biệt</span><span class="topline-line"></span><span>01 / 03</span></div>
+			<div class="celebration-content"><p class="eyebrow"><span></span> hôm nay là ngày của em gái</p><h2 id="celebrationTitle">Happy<br><em>Birthday!</em></h2><p class="recipient">Gửi <strong>em gái đáng yêu nhất</strong></p><p class="wish">Chúc em gái tuổi mới thật rực rỡ, luôn vui vẻ, luôn được yêu thương và đủ can đảm để đi đến mọi nơi trái tim em muốn.</p><button class="text-button" id="memoriesButton" type="button">Mở những kỷ niệm <span>→</span></button></div>
+			<div class="cake" aria-hidden="true"><span class="flame"></span><span class="candle"></span><span class="cake-top"></span><span class="cake-body"></span></div>
+		</section>
+
+		<section class="screen memories-screen" id="memoriesScreen" aria-labelledby="memoriesTitle" aria-hidden="true">
+			<div class="celebration-topline"><span>những khoảnh khắc nhỏ</span><span class="topline-line"></span><span>02 / 03</span></div>
+			<div class="memories-heading"><p class="eyebrow"><span></span> lưu lại trong tim</p><h2 id="memoriesTitle">Một năm của<br><em>những điều đẹp.</em></h2></div>
+			<div class="memory-grid">
+				<article class="memory-card memory-card-large"><div class="memory-image"><img src="picture/anh1.jpg" alt="Em gái trong không gian trang trí Tết"><span>01</span></div><p>Những ngày nắng</p><small>và những nụ cười thật to</small></article>
+				<article class="memory-card memory-card-offset"><div class="memory-image"><img src="picture/anh2.jpg" alt="Em gái cùng gia đình ngoài phố"><span>02</span></div><p>Đi đâu cũng được</p><small>miễn là đi cùng nhau</small></article>
+				<article class="memory-card memory-card-small"><div class="memory-image"><img src="picture/anh3.jpg" alt="Em gái trong không gian hoa và đèn lồng"><span>03</span></div><p>Khoảnh khắc này</p><small>mình sẽ nhớ mãi</small></article>
+			</div>
+			<button class="text-button next-button" id="finalButton" type="button">Đọc lời nhắn cuối <span>→</span></button>
+		</section>
+
+		<section class="screen final-screen" id="finalScreen" aria-labelledby="finalTitle" aria-hidden="true"><div class="heart-field" id="heartField" aria-hidden="true"></div><div class="final-mark">♡</div><p class="eyebrow"><span></span> và điều quan trọng nhất</p><h2 id="finalTitle">Em gái xứng đáng<br>với <em>mọi điều tốt đẹp.</em></h2><p class="final-copy">Chúc em gái năm nay học thật tốt,<br>đạt được những điều em mong muốn.</p><p class="signature">— luôn thương em</p><button class="replay-button" id="replayButton" type="button"><span>↻</span> Xem lại từ đầu</button><p class="final-date">món quà nhỏ, tình cảm thật to</p></section>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
